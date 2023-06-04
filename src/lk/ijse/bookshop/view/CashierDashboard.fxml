@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cashierDashboardContex" prefHeight="750.0" prefWidth="1360.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookshop.controller.CashierDashboardController">
+   <children>
+      <AnchorPane layoutY="26.0" prefHeight="724.0" prefWidth="199.0" style="-fx-background-color: #3c3b3b;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="7.0" layoutY="11.0" onAction="#booksDetailsBtnOnAction" prefHeight="38.0" prefWidth="186.0" ripplerFill="#979595" style="-fx-background-radius: 8; -fx-alignment: left; -fx-background-color: #6e6c6c;" text="Books Details" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="6.0" layoutY="55.0" onAction="#manageCustomersBtnOnAction" prefHeight="38.0" prefWidth="186.0" ripplerFill="#979595" style="-fx-background-radius: 8; -fx-alignment: left; -fx-background-color: #6e6c6c;" text="Manage Customers" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="7.0" layoutY="187.0" onAction="#logoutBtnOnAction" prefHeight="38.0" prefWidth="186.0" ripplerFill="#979595" style="-fx-background-radius: 8; -fx-alignment: left; -fx-background-color: #6e6c6c;" text="Log out" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="149.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/books338Copy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="147.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/reding3488Copy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="148.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/logoutCopy.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="7.0" layoutY="99.0" onAction="#placeOrderBtnOnAction" prefHeight="38.0" prefWidth="186.0" ripplerFill="#979595" style="-fx-background-radius: 8; -fx-alignment: left; -fx-background-color: #6e6c6c;" text="Place Order" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="149.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/bookIssueCopy.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="6.0" layoutY="143.0" onAction="#orderDetailsBtnOnAction" prefHeight="38.0" prefWidth="186.0" ripplerFill="#979595" style="-fx-background-radius: 8; -fx-alignment: left; -fx-background-color: #6e6c6c;" text="Order Details" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="148.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/reports9488Copy.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="cashierContex" layoutX="199.0" layoutY="34.0" prefHeight="716.0" prefWidth="1162.0" style="-fx-background-color: #c9c9c9;">
+         <children>
+            <Pane prefHeight="700.0" prefWidth="1169.0" style="-fx-background-color: #def4f4;">
+               <children>
+                  <Pane layoutX="586.0" layoutY="29.0" prefHeight="88.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="77.0" fitWidth="83.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/flat-world-book-day-illustration_23-2148886925.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="121.0" layoutY="19.0" prefHeight="18.0" prefWidth="83.0" text="Publishers" />
+                        <Label layoutX="135.0" layoutY="45.0" prefHeight="18.0" prefWidth="32.0" text="5" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#a8a2a2" offsetX="5.0" offsetY="5.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="872.0" layoutY="29.0" prefHeight="88.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="77.0" fitWidth="83.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icon/Author.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="121.0" layoutY="19.0" prefHeight="18.0" prefWidth="83.0" text="Authers" />
+                        <Label layoutX="135.0" layoutY="45.0" prefHeight="18.0" prefWidth="32.0" text="5" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#a8a2a2" offsetX="5.0" offsetY="5.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="18.0" layoutY="137.0" prefHeight="88.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="77.0" fitWidth="83.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/icon/shopping.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="121.0" layoutY="19.0" prefHeight="18.0" prefWidth="99.0" text="Total Book Issue" />
+                        <Label layoutX="135.0" layoutY="45.0" prefHeight="18.0" prefWidth="32.0" text="67" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#a8a2a2" offsetX="5.0" offsetY="5.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="586.0" layoutY="137.0" prefHeight="88.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="77.0" fitWidth="83.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icon/5340155.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="121.0" layoutY="19.0" prefHeight="18.0" prefWidth="83.0" text="Order Details" />
+                        <Label layoutX="135.0" layoutY="45.0" prefHeight="18.0" prefWidth="32.0" text="3" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#a8a2a2" offsetX="5.0" offsetY="5.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="873.0" layoutY="137.0" prefHeight="88.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="77.0" fitWidth="83.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icon/coins.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="121.0" layoutY="19.0" prefHeight="18.0" prefWidth="83.0" text="Income" />
+                        <Label layoutX="118.0" layoutY="47.0" prefHeight="18.0" prefWidth="62.0" text="RS.3700" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#a8a2a2" offsetX="5.0" offsetY="5.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Pane>
+                  <TitledPane animated="false" layoutX="12.0" layoutY="248.0" text="Today Reports">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1134.0">
+                           <children>
+                              <Pane layoutX="27.0" layoutY="35.0" prefHeight="110.0" prefWidth="250.0" style="-fx-background-color: #f8ca00; -fx-background-radius: 5;">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="9.0" layoutY="24.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../assets/icon/books338Copy.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="97.0" layoutY="16.0" text="Book Issue" />
+                                    <Label layoutX="123.0" layoutY="46.0" text="0" />
+                                 </children></Pane>
+                              <Pane layoutX="304.0" layoutY="37.0" prefHeight="110.0" prefWidth="250.0" style="-fx-background-color: #00d4f7; -fx-background-radius: 5;">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="13.0" layoutY="23.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../assets/icon/cujjrkCopy.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="119.0" layoutY="14.0" text="New Customers" />
+                                    <Label layoutX="145.0" layoutY="44.0" text="0" />
+                                 </children></Pane>
+                              <Pane layoutX="581.0" layoutY="36.0" prefHeight="110.0" prefWidth="250.0" style="-fx-background-color: #00f44d; -fx-background-radius: 5;">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="12.0" layoutY="20.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../assets/icon/1addbook.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="125.0" layoutY="22.0" text="New Add Books" />
+                                    <Label layoutX="151.0" layoutY="52.0" text="0" />
+                                 </children></Pane>
+                              <Pane layoutX="857.0" layoutY="36.0" prefHeight="110.0" prefWidth="250.0" style="-fx-background-color: #d107e4; -fx-background-radius: 5;">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="12.0" layoutY="26.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../assets/icon/reports3Copy.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="114.0" layoutY="26.0" text="Today earn" />
+                                    <Label layoutX="140.0" layoutY="56.0" text="0" />
+                                 </children></Pane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <TitledPane animated="false" layoutX="13.0" layoutY="480.0" prefWidth="1134.0" text="Last day Reports">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="1134.0">
+                           <children>
+                              <Pane layoutX="26.0" layoutY="34.0" prefHeight="110.0" prefWidth="250.0" style="-fx-background-color: #f8ca00; -fx-background-radius: 5;">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="9.0" layoutY="24.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../assets/icon/books338Copy.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="97.0" layoutY="16.0" text="Book Issue" />
+                                    <Label layoutX="123.0" layoutY="46.0" text="0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="303.0" layoutY="36.0" prefHeight="110.0" prefWidth="250.0" style="-fx-background-color: #00d4f7; -fx-background-radius: 5;">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="13.0" layoutY="23.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../assets/icon/cujjrkCopy.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="119.0" layoutY="14.0" text="New Customers" />
+                                    <Label layoutX="145.0" layoutY="44.0" text="0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="580.0" layoutY="35.0" prefHeight="110.0" prefWidth="250.0" style="-fx-background-color: #00f44d; -fx-background-radius: 5;">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="12.0" layoutY="20.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../assets/icon/1addbook.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="125.0" layoutY="22.0" text="New Add Books" />
+                                    <Label layoutX="151.0" layoutY="52.0" text="0" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="856.0" layoutY="35.0" prefHeight="110.0" prefWidth="250.0" style="-fx-background-color: #d107e4; -fx-background-radius: 5;">
+                                 <children>
+                                    <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="12.0" layoutY="26.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../assets/icon/reports3Copy.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="114.0" layoutY="26.0" text="Lastday earn" />
+                                    <Label layoutX="140.0" layoutY="56.0" text="0" />
+                                 </children>
+                              </Pane>
+                           </children></AnchorPane>
+                    </content>
+                  </TitledPane>
+                  <Pane layoutX="18.0" layoutY="29.0" prefHeight="88.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="77.0" fitWidth="83.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icon/4298202.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="121.0" layoutY="19.0" prefHeight="18.0" prefWidth="59.0" text="Books" />
+                        <Label layoutX="135.0" layoutY="45.0" prefHeight="18.0" prefWidth="32.0" text="23" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#a8a2a2" offsetX="5.0" offsetY="5.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="303.0" layoutY="29.0" prefHeight="88.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="77.0" fitWidth="83.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icon/catogery.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="121.0" layoutY="19.0" prefHeight="18.0" prefWidth="69.0" text="Catogerys" />
+                        <Label layoutX="135.0" layoutY="45.0" prefHeight="18.0" prefWidth="32.0" text="7" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#a8a2a2" offsetX="5.0" offsetY="5.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Pane>
+                  <Pane layoutX="303.0" layoutY="137.0" prefHeight="88.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="77.0" fitWidth="83.0" layoutX="7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/icon/4824754.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="121.0" layoutY="19.0" prefHeight="18.0" prefWidth="83.0" text="Customers" />
+                        <Label layoutX="135.0" layoutY="45.0" prefHeight="18.0" prefWidth="32.0" text="28" />
+                     </children>
+                     <effect>
+                        <DropShadow color="#a8a2a2" offsetX="5.0" offsetY="5.0" />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+      <Label fx:id="dateID" layoutX="1019.0" layoutY="12.0" prefHeight="21.0" prefWidth="110.0" text="Date:" textFill="#0a0a0a" />
+      <Label layoutX="207.0" layoutY="3.0" prefHeight="26.0" prefWidth="266.0" text="Bookshop Management System">
+         <font>
+            <Font name="Alaska" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="1268.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon/employee.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="1296.0" layoutY="11.0" text="Cashier">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeT1" layoutX="1142.0" layoutY="12.0" prefHeight="21.0" prefWidth="110.0" text="Time" />
+      <JFXButton layoutX="-6.0" layoutY="-2.0" onAction="#DashboardBtnOnAction" prefHeight="35.0" prefWidth="205.0" ripplerFill="#9d939e" style="-fx-background-radius: 8; -fx-background-color: #3c3b3b;" text="Dashbord" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="27.0" fitWidth="27.0" layoutX="153.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon/anu3Copy.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

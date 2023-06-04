@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="708.0" prefWidth="1162.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookshop.controller.SuplierManageFormController">
+   <children>
+      <Label layoutX="443.0" layoutY="-4.0" prefHeight="50.0" prefWidth="306.0" text="Manage Suppliers" textFill="#072ef2">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Pane layoutX="10.0" layoutY="58.0" prefHeight="642.0" prefWidth="1141.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow color="#e1e0e0" />
+         </effect>
+         <children>
+            <TextField fx:id="txtSupplierID" layoutX="129.0" layoutY="29.0" prefHeight="37.0" prefWidth="240.0" promptText="supplier ID" style="-fx-background-radius: 10;" />
+            <Label layoutX="22.0" layoutY="33.0" prefHeight="30.0" prefWidth="98.0" text="Supplier ID">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="23.0" layoutY="199.0" onAction="#addSupplierBtnOnAction" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #15b9ea; -fx-background-radius: 15;" text="Add " textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#d3cece" height="10.0" offsetX="5.0" offsetY="5.0" radius="4.5" width="10.0" />
+               </effect>
+            </JFXButton>
+            <TextField fx:id="txtName" layoutX="129.0" layoutY="74.0" prefHeight="37.0" prefWidth="240.0" promptText="supplier name" style="-fx-background-radius: 10;" />
+            <Label layoutX="24.0" layoutY="78.0" prefHeight="27.0" prefWidth="92.0" text="Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtEmail" layoutX="512.0" layoutY="75.0" prefHeight="37.0" prefWidth="240.0" promptText="email" style="-fx-background-radius: 10;" />
+            <Label layoutX="408.0" layoutY="79.0" prefHeight="27.0" prefWidth="92.0" text="Email">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPhoneNo" layoutX="512.0" layoutY="29.0" prefHeight="37.0" prefWidth="240.0" promptText="phone number" style="-fx-background-radius: 10;" />
+            <Label layoutX="408.0" layoutY="33.0" prefHeight="27.0" prefWidth="92.0" text="Phone No">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="174.0" layoutY="199.0" onAction="#deleteSupplierBtnOnAction" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #15b9ea; -fx-background-radius: 15;" text="Delete " textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#d3cece" height="10.0" offsetX="5.0" offsetY="5.0" radius="4.5" width="10.0" />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="325.0" layoutY="199.0" onAction="#updateSupplierBtnOnAction" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #15b9ea; -fx-background-radius: 15;" text="Update " textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#d3cece" height="10.0" offsetX="5.0" offsetY="5.0" radius="4.5" width="10.0" />
+               </effect>
+            </JFXButton>
+            <TableView fx:id="manageSupplierTableView" layoutX="16.0" layoutY="259.0" prefHeight="368.0" prefWidth="1111.0">
+               <columns>
+                  <TableColumn fx:id="tbcSupplierID" prefWidth="158.3333282470703" text="Supplier ID" />
+                  <TableColumn fx:id="tbcName" prefWidth="172.0" text="Name" />
+                  <TableColumn fx:id="tbcEmail" prefWidth="265.0" text="Email" />
+                  <TableColumn fx:id="tbcPhoneNo" prefWidth="252.0" text="Phone No" />
+                  <TableColumn fx:id="tbcEmployeID" prefWidth="262.0" text="Employe ID" />
+               </columns>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="414.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/uztmizeCopy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="265.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/deleteCopy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="110.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/4774675addCopy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="224.0" fitWidth="316.0" layoutX="806.0" layoutY="15.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/sajdsnjnds.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtEmployeID" layoutX="130.0" layoutY="119.0" prefHeight="37.0" prefWidth="240.0" promptText="employe ID" style="-fx-background-radius: 10;" />
+            <Label layoutX="25.0" layoutY="123.0" prefHeight="30.0" prefWidth="103.0" text="Employe ID">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="txtSearch" layoutX="824.0" layoutY="11.0" prefHeight="35.0" prefWidth="240.0" style="-fx-background-radius: 10;" />
+      <JFXButton layoutX="1066.0" layoutY="11.0" onAction="#searchBtnOnAction" prefHeight="35.0" prefWidth="83.0" ripplerFill="#8f9090" style="-fx-background-color: white; -fx-background-radius: 15;" text="Search" textFill="#837f7f">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#d3cece" height="10.0" offsetX="5.0" offsetY="5.0" radius="4.5" width="10.0" />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

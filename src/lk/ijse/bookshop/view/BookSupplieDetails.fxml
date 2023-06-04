@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="bookSupplierDetailsID" prefHeight="708.0" prefWidth="1162.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookshop.controller.BookSupplieDetailsController">
+   <children>
+      <Label layoutX="387.0" layoutY="-1.0" prefHeight="50.0" prefWidth="355.0" text="Books Supplie Details" textFill="#072ef2">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Pane layoutX="10.0" layoutY="62.0" prefHeight="620.0" prefWidth="1141.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow color="#e1e0e0" />
+         </effect>
+         <children>
+            <TableView fx:id="bookSupplieDetailsTableView" layoutX="15.0" layoutY="14.0" prefHeight="534.0" prefWidth="1111.0">
+               <columns>
+                  <TableColumn prefWidth="183.0" text="Book ID" />
+                  <TableColumn prefWidth="126.0" text="Book Name" />
+                  <TableColumn prefWidth="154.0" text="Category" />
+                  <TableColumn prefWidth="146.0" text="Year" />
+                  <TableColumn prefWidth="163.0" text="Qty" />
+                  <TableColumn prefWidth="166.0" text="Supplie Date" />
+                  <TableColumn prefWidth="172.0" text="Supplie ID" />
+               </columns>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

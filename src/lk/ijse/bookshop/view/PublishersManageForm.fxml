@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="publisherManagePaneID" prefHeight="708.0" prefWidth="1162.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.bookshop.controller.PublishersManageFormController">
+   <children>
+      <Label layoutX="449.0" layoutY="-2.0" prefHeight="50.0" prefWidth="308.0" text="Manage Publisher" textFill="#072ef2">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Pane layoutX="11.0" layoutY="52.0" prefHeight="642.0" prefWidth="1141.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow color="#e1e0e0" />
+         </effect>
+         <children>
+            <TextField fx:id="txtPublisherID" layoutX="153.0" layoutY="17.0" prefHeight="37.0" prefWidth="240.0" promptText="publisher ID" style="-fx-background-radius: 10;" />
+            <Label layoutX="26.0" layoutY="21.0" prefHeight="30.0" prefWidth="122.0" text="Publisher ID">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="23.0" layoutY="190.0" onAction="#addPublisherBtnOnAction" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #15b9ea; -fx-background-radius: 15;" text="Add " textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#d3cece" height="10.0" offsetX="5.0" offsetY="5.0" radius="4.5" width="10.0" />
+               </effect>
+            </JFXButton>
+            <TextField fx:id="txtPublisherName" layoutX="152.0" layoutY="66.0" prefHeight="37.0" prefWidth="240.0" promptText="publisher name" style="-fx-background-radius: 10;" />
+            <Label layoutX="30.0" layoutY="70.0" prefHeight="27.0" prefWidth="92.0" text="Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPublisherAddress" layoutX="532.0" layoutY="16.0" prefHeight="37.0" prefWidth="240.0" promptText="address" style="-fx-background-radius: 10;" />
+            <Label layoutX="433.0" layoutY="20.0" prefHeight="27.0" prefWidth="92.0" text="Address">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="174.0" layoutY="190.0" onAction="#deletePublisherBtnOnAction" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #15b9ea; -fx-background-radius: 15;" text="Delete " textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#d3cece" height="10.0" offsetX="5.0" offsetY="5.0" radius="4.5" width="10.0" />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="325.0" layoutY="190.0" onAction="#updatePublisherBtnOnAction" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: #15b9ea; -fx-background-radius: 15;" text="Update " textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#d3cece" height="10.0" offsetX="5.0" offsetY="5.0" radius="4.5" width="10.0" />
+               </effect>
+            </JFXButton>
+            <TableView fx:id="ManagePublisherTableView" layoutX="16.0" layoutY="259.0" prefHeight="368.0" prefWidth="1111.0">
+               <columns>
+                  <TableColumn fx:id="tbcPublisherID" prefWidth="159.0" text="Publisher ID" />
+                  <TableColumn fx:id="tbcName" prefWidth="245.33331298828125" text="Name" />
+                  <TableColumn fx:id="tbcEmail" prefWidth="292.6666259765625" text="Email" />
+                  <TableColumn fx:id="tbcphoneNo" minWidth="0.0" prefWidth="199.33331298828125" text="phoneNo" />
+                  <TableColumn fx:id="tbcAddress" minWidth="0.0" prefWidth="212.66668701171875" text="Address" />
+
+               </columns>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </TableView>
+            <TextField fx:id="txtPublisherEmail" layoutX="532.0" layoutY="64.0" prefHeight="37.0" prefWidth="240.0" promptText="email" style="-fx-background-radius: 10;" />
+            <Label layoutX="433.0" layoutY="68.0" prefHeight="30.0" prefWidth="92.0" text="Email">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="217.0" fitWidth="287.0" layoutX="839.0" layoutY="17.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/flat-world-book-day-illustration_23-2148886925.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="414.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/2updatebook.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="268.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/2cutbook.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="114.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon/1addbook.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtPublisherPhoneNo" layoutX="153.0" layoutY="117.0" prefHeight="37.0" prefWidth="240.0" promptText="Phone number" style="-fx-background-radius: 10;" />
+            <Label layoutX="31.0" layoutY="121.0" prefHeight="27.0" prefWidth="92.0" text="Phone No">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="txtSearch" layoutX="822.0" layoutY="6.0" prefHeight="35.0" prefWidth="240.0" style="-fx-background-radius: 10;" />
+      <JFXButton layoutX="1065.0" layoutY="6.0" onAction="#searchBtnOnAction" prefHeight="35.0" prefWidth="83.0" ripplerFill="#8f9090" style="-fx-background-color: white; -fx-background-radius: 15;" text="Search" textFill="#837f7f">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#d3cece" height="10.0" offsetX="5.0" offsetY="5.0" radius="4.5" width="10.0" />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>
